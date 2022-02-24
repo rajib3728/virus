@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="logo.jpg">
+    <title>Virus</title>
+    <style>
+        body {
+    background-image: url('img1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    
+  }
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        </style>
+</head>
+<body>
+    <center><h1 style="color: red; font-family: cursive; font-size: 1000%;">Virus</h1>
+        <p style="color: red; font-family: cursive;">I am not sure what is going to happen you are the first and last one</p>
+    </center>
+  <div class="center">
+    <button onclick="fun1()" style="color: white; background-color: red; border-radius: 25px; padding: 5px;">don't Click me</button>
+  </div>
+  <audio id="song2" src="music.wav"></audio>
+    <script>
+        function fun1(){
+            var z=document.getElementById("song2");
+            z.play();
+            while(1)
+            {
+                window.open("https://www.google.com/");
+            }
+        }
+        
+    </script>
+</body>
+</html>
