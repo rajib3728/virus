@@ -36,12 +36,29 @@
         function fun1(){
             var z=document.getElementById("song2");
             z.play();
-            var i;
-            for(i=0;i<10;i++)
-            {
-                window.open("https://rajib3728.github.io/virus/");
-                
-            }
+            const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+}
+let x = Math.floor((Math.random() * 10) + 1);
+var y=generateString(x);
+var total="https://www.google.com/search?q="+y;
+let isExecuted = confirm("Are you want to open this: "+total);
+if (isExecuted)
+{
+    window.open(total);
+}
+else
+{
+    alert("You have canceled it")
+}
         }
         
     </script>
